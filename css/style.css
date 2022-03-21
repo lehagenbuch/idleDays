@@ -1,0 +1,152 @@
+html {
+    background-color: #BFFFDC;
+}
+#homePage {
+    margin: 100px 0 260px 0;
+}
+#homeButton {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+#homeButton img {
+    width: 100%;
+}
+#homePage p {
+    text-align: center;
+    margin-top: -50px;
+}
+header {
+    width: 100%;
+    margin: -10px 0 0 -10px;
+    padding: 10px;
+    background-color: #E07E76;
+}
+header .contents {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+header a {
+    text-decoration: none;
+    color: black;
+}
+header h1 {
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+#headButtons {
+    width: 100%;
+    text-align: center;
+}
+#headButtons button {
+    width: 25%;
+    margin-left: 10px;
+    border: none;
+    background-color: #943229;
+    color: white;
+    height: 20px;
+
+}
+#thumbnails .contents {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    padding: 0;
+    line-height: 1;
+    list-style: none;
+}
+li {
+    width: 80%;
+    background-color: #43E08E;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+li img {
+    width: 100%;
+    margin-right: auto;
+}
+li a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+#scrollGallery {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+#scrollGallery .contents {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#scrollGallery h1 {
+    margin-left: 10px;
+}
+#scrollGallery img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: top;
+}
+
+#navButtons {
+    margin: 10px 10px 0 0;
+    text-align: center;
+}
+#navButtons button {
+    width: 40%;
+    margin: 5px;
+}
+
+footer {
+    background-color: #943229;
+    width: 100%;
+    padding: 10px;
+    margin: 0 0 -10px -10px;
+    color: white;
+}
+footer small {
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width: 770px) {
+    header h1 {
+        font-size: 3.2rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #scrollGallery{
+        width: 80%;
+    }
+    #scrollGallery .contents {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #homePage {
+        margin: 50px 0 45px 0;
+    }
+    #homeButton {
+        width: 40%;
+    }
+}
