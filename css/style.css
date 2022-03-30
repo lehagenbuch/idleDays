@@ -1,5 +1,5 @@
 html {
-    background-color: #BFFFDC;
+    background-color: #fefccf;
 }
 #homePage {
     margin: 100px 0 260px 0;
@@ -22,7 +22,7 @@ header {
     width: 100%;
     margin: -10px 0 0 -10px;
     padding: 10px;
-    background-color: #E07E76;
+    background-color: #e7c4c1;
 }
 header .contents {
     width: 80%;
@@ -37,20 +37,24 @@ header h1 {
     font-size: 2.4rem;
     text-align: center;
 }
+#mastHead {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
 
 #headButtons {
     width: 100%;
     text-align: center;
 }
-#headButtons button {
-    width: 25%;
-    margin-left: 10px;
-    border: none;
-    background-color: #943229;
-    color: white;
-    height: 20px;
-
-}
+    #headButtons button {
+        width: 25%;
+        margin-left: 10px;
+        border: none;
+        background-color: #f5c776;
+        color: black;
+        height: 20px;
+    }
 #thumbnails .contents {
     width: 80%;
     margin-left: auto;
@@ -67,7 +71,7 @@ header h1 {
 }
 li {
     width: 80%;
-    background-color: #43E08E;
+    background-color: #f5c776;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
@@ -148,5 +152,12 @@ footer small {
     }
     #homeButton {
         width: 40%;
+    }
+    #mastHead {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 40%;
+        margin-left: 30%;
+        margin-right:  30%;
     }
 }
