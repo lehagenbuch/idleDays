@@ -1,5 +1,6 @@
 html {
-    background-color: #d2d087;
+    background-image: url("../images/backTexture.jpg");
+    background-size: 125%;
     cursor: url("../images/cursor.png"), auto;
 }
 a, href {
