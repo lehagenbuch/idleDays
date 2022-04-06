@@ -7,7 +7,7 @@
     <title>Idle Days on the Yann</title>
     <link rel="stylesheet" href="css/style.css">
     <script>
-        var sources = ["images/page1.jpeg", ("images/page2.jpeg"), ("images/page3.jpeg"), ("images/page4.jpeg"), ("images/page5.jpeg"), ("images/page6.jpeg"), ("images/page7.jpeg"), ("images/page8.jpeg"), ("images/page9.jpeg"), ("images/page10.jpeg"), ("images/page11.jpeg"), ("images/page12.jpeg"), ("images/page13.jpeg"), ("images/page14.jpeg"), ("images/page15.jpeg"), ("images/sample1.jpeg")];
+        var sources = ["images/page1.jpeg", ("images/page2.jpeg"), ("images/page3.jpeg"), ("images/page4.jpeg"), ("images/page5.jpeg"), ("images/page6.jpeg"), ("images/page7.jpeg"), ("images/page8.jpeg"), ("images/page9.jpeg"), ("images/page10.jpeg"), ("images/page11.jpeg"), ("images/page12.jpeg"), ("images/page13.jpeg"), ("images/page14.jpeg"), ("images/page15.jpeg")];
         document.getElementById('scrollGallery').style.display = 'none';
         document.getElementById('thumbnails').style.display = 'none';
         document.getElementById('homePage').style.display = 'block';
@@ -148,12 +148,12 @@
                         <h3>Page 15</h3>
                     </a>
                 </li>
-                <li>
+                <!--<li>
                     <a href="#" onclick="goPage(16)" id="page1">
                         <img src="images/sample1.jpeg" alt="sturgeon1">
                         <h3>Page 16</h3>
                     </a>
-                </li>
+                </li>-->
             </ul>
         </div>
     </section>
@@ -214,7 +214,7 @@
         function goNext() {
             let page = parseInt(getCookie("pageNumber"));
             page = page + 1;
-            if (page >= 17) {
+            if (page >= 16) {
                 page = 1;
             }
             goPage(page);
@@ -223,7 +223,7 @@
             let page = parseInt(getCookie("pageNumber"));
             page = page - 1;
             if (page <= 0) {
-                page = 16;
+                page = 15;
             }
             goPage(page);
         }
