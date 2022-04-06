@@ -1,5 +1,9 @@
 html {
     background-color: #d2d087;
+    cursor: url("../images/cursor.png"), auto;
+}
+a, href {
+    cursor: url("../images/cursor.png"), auto;
 }
 #homePage {
     margin: 100px 0 260px 0;
@@ -22,7 +26,7 @@ header {
     width: 100%;
     margin: -10px 0 0 -10px;
     padding: 10px;
-    background-image: url("../images/header.png");
+    background-image: url("../images/header.jpg");
     background-size: 105%;
 }
 header .contents {
@@ -33,6 +37,10 @@ header .contents {
 header a {
     text-decoration: none;
     color: black;
+}
+header p {
+    color: white;
+    font-style: oblique;
 }
 header h1 {
     font-size: 2.4rem;
@@ -48,14 +56,18 @@ header h1 {
     width: 100%;
     text-align: center;
 }
-    #headButtons button {
-        width: 25%;
-        margin-left: 10px;
-        border: none;
-        background-color: #d2d087;
-        color: black;
-        height: 20px;
-    }
+
+#headButtons button {
+    width: 25%;
+    margin-left: 10px;
+    border: none;
+    background-color: #d2d087;
+    color: black;
+    height: 20px;
+}
+#headButtons button:hover {
+    background-color: #c3c17c;
+}
 #thumbnails .contents {
     width: 80%;
     margin-left: auto;
@@ -72,7 +84,7 @@ header h1 {
 }
 li {
     width: 80%;
-    background-color: #f5c776;
+    background-color: #943229;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
@@ -118,8 +130,12 @@ li a {
 #navButtons button {
     width: 40%;
     margin: 5px;
+    border: none;
+    background-color: #fff;
 }
-
+#navButtons button:hover {
+    background-color: #eee;
+}
 footer {
     background-color: #943229;
     width: 100%;
@@ -153,6 +169,9 @@ footer small {
     }
     #homeButton {
         width: 40%;
+    }
+    #headButtons button {
+        width: 10%;
     }
     #mastHead {
         margin-top: 20px;

@@ -32,7 +32,10 @@
     <header id="header">
         <div class="contents" id="trueHeader">
             <!--<h1>Idle Days on the Yann</h1>-->
-            <img src="images/mast.png" id="mastHead"/>
+            <a href="#" onclick="goPage(0)">
+                <img src="images/mast.png" id="mastHead" />
+            </a>
+            
             <div id="headButtons">
                 <button onclick="goPage(0)">Home</button>
                 <button onclick="goPage(200)">About</button>
@@ -159,7 +162,7 @@
         <!--<button id="prev" onclick="goPrev()">Previous</button>
         <button id="next" onclick="goNext()">Next</button>-->
         <div class="contents">
-            <h1 id="pgNum">Page Number</h1>
+            <!--<h1 id="pgNum">Page Number</h1>-->
             <img src="images/sample1.jpeg" id="galleryImg"/>
             <div id="navButtons">
                 <button onclick="goPrev()">Previous</button>
@@ -203,7 +206,7 @@
                 document.getElementById('aboutPage').style.display = 'none';
                 document.getElementById('trueHeader').style.display = 'block';
 
-                document.getElementById('pgNum').innerHTML = "Page " + pageNum;
+                <!--document.getElementById('pgNum').innerHTML = "Page " + pageNum;-->
                 document.getElementById('galleryImg').src = sources[pageNum - 1];
             }
             setCookie("pageNumber", pageNum)
