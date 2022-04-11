@@ -1,10 +1,10 @@
 html {
     background-image: url("../images/backTexture.jpg");
     background-size: 175%;
-    cursor: url("https://idledays-1be2f.kxcdn.com/idleDays/images/cursor.png"), auto;
+    cursor: url("../images/cursor.png"), auto;
 }
 a, href {
-    cursor: url("https://idledays-1be2f.kxcdn.com/idleDays/images/cursor.png"), auto;
+    cursor: url("../images/cursor.png"), auto;
 }
 #homePage {
     margin: 100px 0 260px 0;
@@ -28,7 +28,7 @@ header {
     width: 100%;
     margin: -10px 0 0 -10px;
     padding: 10px;
-    background-image: url("https://idledays-1be2f.kxcdn.com/idleDays/images/header.jpg");
+    background-image: url("../images/header.jpg");
     background-size: 105%;
 }
 header .contents {
