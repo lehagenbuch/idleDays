@@ -66,7 +66,10 @@
     </header>
 
     <div id="aboutPage">
-        <p>Original story authored by Lord Dunsany, web-comic illustrated by Lucy Hagenbuch</p>
+        <p><i>Idle Days on the Yann</i> is a short story originally written by an early
+        fantasy writer Lord Dunsany. It was first published in 1910 in Dunsany’s
+        short story collection <i>A Dreamer’s Tales</i>. This web-comic adaptation was illustrated
+        and programmed by Lucy Hagenbuch.</p>
     </div>
 
     <section id="thumbnails">
@@ -192,6 +195,8 @@
                 document.getElementById('homePage').style.display = 'block';
                 document.getElementById('aboutPage').style.display = 'none';
                 document.getElementById('trueHeader').style.display = 'none';
+                document.getElementById('homePage').scrollIntoView();
+
 
             }
             else if (pageNum == 100) {
@@ -200,6 +205,8 @@
                 document.getElementById('homePage').style.display = 'none';
                 document.getElementById('aboutPage').style.display = 'none';
                 document.getElementById('trueHeader').style.display = 'block';
+                document.getElementById('thumbnails').scrollIntoView();
+
             }
             else if (pageNum == 200) {
                 document.getElementById('scrollGallery').style.display = 'none';
@@ -207,6 +214,8 @@
                 document.getElementById('homePage').style.display = 'none';
                 document.getElementById('aboutPage').style.display = 'block';
                 document.getElementById('trueHeader').style.display = 'block';
+                document.getElementById('aboutPage').scrollIntoView();
+
             }
             else {
                 document.getElementById('scrollGallery').style.display = 'block';
@@ -214,11 +223,10 @@
                 document.getElementById('thumbnails').style.display = 'none';
                 document.getElementById('aboutPage').style.display = 'none';
                 document.getElementById('trueHeader').style.display = 'block';
-
-                <!--document.getElementById('pgNum').innerHTML = "Page " + pageNum;-->
+                document.getElementById('scrollGallery').scrollIntoView();
                 document.getElementById('galleryImg').src = sources[pageNum - 1];
             }
-            setCookie("pageNumber", pageNum)
+    setCookie("pageNumber", pageNum)
         }
         function goNext() {
             let page = parseInt(getCookie("pageNumber"));

@@ -1,7 +1,8 @@
 html {
-    background-image: url("../images/backTexture.jpg");
-    background-size: 175%;
+    background-image: url("../images/backTexture2.jpg");
+    background-size: 140%;
     cursor: url("../images/cursor.png"), auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 a, href {
     cursor: url("../images/cursor.png"), auto;
@@ -51,7 +52,7 @@ header h1 {
 #mastHead {
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 100
+    width: 100;
 }
 
 #headButtons {
@@ -62,6 +63,8 @@ header h1 {
 #headButtons button {
     width: 25%;
     margin-left: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
     border: none;
     background-color: #d2d087;
     color: black;
@@ -124,16 +127,24 @@ li a {
     margin-right: auto;
     vertical-align: top;
 }
+#aboutPage {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
 
 #navButtons {
     margin: 10px 10px 0 0;
     text-align: center;
 }
 #navButtons button {
-    width: 40%;
+    width: 20%;
     margin: 5px;
     border: none;
     background-color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
 }
 #navButtons button:hover {
     background-color: #eee;
