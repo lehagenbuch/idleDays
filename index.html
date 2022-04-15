@@ -164,8 +164,8 @@
             <!--<h1 id="pgNum">Page Number</h1>-->
             <img src="images/page1.jpeg" id="galleryImg"/>
             <div id="navButtons">
-                <button onclick="goPrev()">Previous</button>
-                <button onclick="goNext()">Next</button>
+                <button onclick="goPrev()" id="prevButt">Previous</button>
+                <button onclick="goNext()" id="nextButt">Next</button>
             </div>
         </div>
 
@@ -211,6 +211,28 @@
                 document.getElementById('aboutPage').scrollIntoView();
 
             }
+            else if (pageNum == 1) {
+                document.getElementById('galleryImg').src = sources[pageNum - 1];
+                document.getElementById('scrollGallery').style.display = 'block';
+                document.getElementById('homePage').style.display = 'none';
+                document.getElementById('thumbnails').style.display = 'none';
+                document.getElementById('aboutPage').style.display = 'none';
+                document.getElementById('trueHeader').style.display = 'block';
+                document.getElementById('prevButt').style.visibility = 'hidden';
+                document.getElementById('nextButt').style.visibility = 'visible';
+                document.getElementById('scrollGallery').scrollIntoView();
+            }
+            else if (pageNum == 14) {
+                document.getElementById('galleryImg').src = sources[pageNum - 1];
+                document.getElementById('scrollGallery').style.display = 'block';
+                document.getElementById('homePage').style.display = 'none';
+                document.getElementById('thumbnails').style.display = 'none';
+                document.getElementById('aboutPage').style.display = 'none';
+                document.getElementById('trueHeader').style.display = 'block';
+                document.getElementById('prevButt').style.visibility = 'visible';
+                document.getElementById('nextButt').style.visibility = 'hidden';
+                document.getElementById('scrollGallery').scrollIntoView();
+            }
             else {
                 document.getElementById('galleryImg').src = sources[pageNum - 1];
                 document.getElementById('scrollGallery').style.display = 'block';
@@ -218,6 +240,8 @@
                 document.getElementById('thumbnails').style.display = 'none';
                 document.getElementById('aboutPage').style.display = 'none';
                 document.getElementById('trueHeader').style.display = 'block';
+                document.getElementById('prevButt').style.visibility = 'visible';
+                document.getElementById('nextButt').style.visibility = 'visible';
                 document.getElementById('scrollGallery').scrollIntoView();
             }
     setCookie("pageNumber", pageNum)
