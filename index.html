@@ -225,7 +225,7 @@
         function goNext() {
             let page = parseInt(getCookie("pageNumber"));
             page = page + 1;
-            if (page >= 14) {
+            if (page >= 15) {
                 page = 1;
             }
             goPage(page);
@@ -234,7 +234,7 @@
             let page = parseInt(getCookie("pageNumber"));
             page = page - 1;
             if (page <= 0) {
-                page = 15;
+                page = 14;
             }
             goPage(page);
         }
