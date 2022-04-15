@@ -22,12 +22,6 @@
             ("images/page12.jpeg"),
             ("images/page14.jpeg"),
             ("images/page15.jpeg")];
-            < !--cdn url: https://idledays-1be2f.kxcdn.com/idleDays -->
-        document.getElementById('scrollGallery').style.display = 'none';
-        document.getElementById('thumbnails').style.display = 'none';
-        document.getElementById('homePage').style.display = 'block';
-        document.getElementById('aboutPage').style.display = 'none';
-        document.getElementById('trueHeader').style.display = 'none';
 
         function checkCookies() {
             let page = getCookie("pageNumber");
@@ -181,7 +175,14 @@
         <small>Original story authored by Lord Dunsany, web-comic illustrated by Lucy Hagenbuch</small>
     </footer>-->
 
-    <script>function goPage(pageNum) {
+    <script>
+        document.getElementById('scrollGallery').style.display = 'none';
+        document.getElementById('thumbnails').style.display = 'none';
+        document.getElementById('homePage').style.display = 'block';
+        document.getElementById('aboutPage').style.display = 'none';
+        document.getElementById('trueHeader').style.display = 'none';
+
+        function goPage(pageNum) {
             if (pageNum == "" || pageNum == 0) {
                 document.getElementById('scrollGallery').style.display = 'none';
                 document.getElementById('thumbnails').style.display = 'none';
@@ -211,13 +212,13 @@
 
             }
             else {
+                document.getElementById('galleryImg').src = sources[pageNum - 1];
                 document.getElementById('scrollGallery').style.display = 'block';
                 document.getElementById('homePage').style.display = 'none';
                 document.getElementById('thumbnails').style.display = 'none';
                 document.getElementById('aboutPage').style.display = 'none';
                 document.getElementById('trueHeader').style.display = 'block';
                 document.getElementById('scrollGallery').scrollIntoView();
-                document.getElementById('galleryImg').src = sources[pageNum - 1];
             }
     setCookie("pageNumber", pageNum)
         }
