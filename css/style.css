@@ -63,7 +63,8 @@ header h1 {
 #headButtons button {
     width: 25%;
     margin-left: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: ltc-pabst-oldstyle,serif;
+    font-weight: 400;
     font-style: italic;
     border: none;
     background-color: #d2d087;
@@ -104,6 +105,9 @@ li a {
     text-decoration: none;
     width: 100%;
     text-align: center;
+    font-family: ltc-pabst-oldstyle,serif;
+    font-weight: 400;
+    font-style: italic;
 }
 #scrollGallery {
     width: 80%;
@@ -143,7 +147,8 @@ li a {
     margin: 5px;
     border: none;
     background-color: #fff;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: ltc-pabst-oldstyle,serif;
+    font-weight: 400;
     font-style: italic;
 }
 #navButtons button:hover {
