@@ -20,6 +20,7 @@ a, href {
 }
 #homeButton img {
     width: 100%;
+    margin-bottom: 60px;
 }
 #homePage p {
     text-align: center;
